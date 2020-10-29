@@ -1,18 +1,19 @@
-const mongoose = require("mongoose");
+const { response } = require("express");
 
-// Replace this with your MONGOURI.
-const MONGOURI = "mongodb://test:a12345@ds257698.mlab.com:57698/node-auth";
+const mongoose = require('mongoose');
 
-const InitiateMongoServer = async () => {
-  try {
-    await mongoose.connect(MONGOURI, {
-      useNewUrlParser: true
-    });
-    console.log("Connected to DB !!");
-  } catch (e) {
-    console.log(e);
-    throw e;
-  }
+const mongoURL= 'mongodb+srv://admin:admin1@cluster0.9zlrf.mongodb.net/node-auth'
+//?retryWrites=true&w=majority'
+const InitialMongoServer = async() => {
+    try{
+        await mongoose.connect(mongoURL, {
+            useNewUrlParser:true,
+            useUnifiedTopology: true
+        });
+        console.log("Connected to DB!!!");
+    }catch(e){
+        console.log(e);
+        throw e;
+    }
 };
-
-module.exports = InitiateMongoServer;
+module.exports = InitialMongoServer;

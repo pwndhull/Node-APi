@@ -1,15 +1,4 @@
 
-![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/po8bf8rxg7lzot1u16pj.png)
-
-### Blog Post URL : [BLOG LINK](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i)
-
-
-I am starting a CodeLab series in which I will building something cool and sharing with the community.
-
-Today, We are going to implement Authentication API in Node using JWT, express, and MongoDB. 
-
-I advise you to follow the table of content and don't miss any steps. I will provide the full app code link at the end. 
-
 ## Table of Content 
    * [1. Introduction](#1-introduction) 
    * [2. Prerequisites](#2-prerequisites) 
@@ -29,7 +18,6 @@ I advise you to follow the table of content and don't miss any steps. I will pro
 
 User Authentication contains various steps, please checkout this flowchart to know more. We will be using this flow to build authentication system in our application.
 
-![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/k2vi3g73qy12ebznxqzs.png)
 
 
 ----
