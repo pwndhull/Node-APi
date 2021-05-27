@@ -18,7 +18,7 @@ const port = process.env.PORT || 3002;
 //Middelware
 
 app.use(bodyPasrser.json());
-
+app.use(bodyPasrser.urlencoded([exteded:false]))
 app.get('/',(request,resopnse) => {
     resopnse.json({message:'Api Working...'});
 
